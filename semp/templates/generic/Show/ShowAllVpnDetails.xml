@@ -1,0 +1,8 @@
+<rpc semp-version="soltr/%s">
+    <show>
+        <message-vpn>
+            <vpn-name>*</vpn-name>
+            <detail></detail>
+        </message-vpn>
+    </show>
+</rpc>

@@ -1,0 +1,7 @@
+<rpc semp-version="soltr/%s">
+   <clear>
+        <replication>
+            <stats></stats>
+        </replication>
+    </clear>
+</rpc>

@@ -1,0 +1,8 @@
+<rpc semp-version="soltr/%s">
+    <message-spool>
+        <vpn-name>%s</vpn-name>
+        <max-egress-flows>
+            <value>%s</value>
+        </max-egress-flows>
+    </message-spool>
+</rpc>

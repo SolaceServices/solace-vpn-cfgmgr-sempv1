@@ -1,0 +1,8 @@
+<rpc semp-version="soltr/%s">
+    <message-spool>
+        <vpn-name>%s</vpn-name>
+        <max-endpoints>
+            <value>%s</value>
+        </max-endpoints>
+    </message-spool>
+</rpc>

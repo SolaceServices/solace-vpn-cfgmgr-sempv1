@@ -1,0 +1,10 @@
+<rpc semp-version="soltr/%s">
+  <message-vpn>
+    <vpn-name>%s</vpn-name>
+    <event>
+      <large-message-threshold>
+        <size>%s</size>
+      </large-message-threshold>
+    </event>
+  </message-vpn>
+</rpc>

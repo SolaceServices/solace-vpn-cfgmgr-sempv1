@@ -1,0 +1,9 @@
+<rpc semp-version="soltr/%s">
+    <clear>
+        <topic-endpoint>
+            <name>*</name>
+            <vpn-name>%s</vpn-name>
+            <stats></stats>
+        </topic-endpoint>
+    </clear>
+</rpc>

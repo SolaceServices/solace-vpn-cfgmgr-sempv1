@@ -1,0 +1,11 @@
+<rpc semp-version="soltr/%s">
+    <acl-profile>
+        <name>%s</name>
+        <vpn-name>%s</vpn-name>
+        <client-connect>
+            <default-action>
+                <allow></allow>
+            </default-action>
+        </client-connect>
+    </acl-profile>
+</rpc>

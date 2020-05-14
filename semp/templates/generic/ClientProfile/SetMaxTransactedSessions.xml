@@ -1,0 +1,11 @@
+<rpc semp-version="soltr/%s">
+    <client-profile>
+        <name>%s</name>
+        <vpn-name>%s</vpn-name>
+          <message-spool>
+          <max-transacted-sessions>
+            <value>%s</value>
+          </max-transacted-sessions>
+          </message-spool>
+    </client-profile>
+</rpc>

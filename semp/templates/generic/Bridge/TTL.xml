@@ -1,0 +1,10 @@
+<rpc semp-version="soltr/%s">
+  <bridge>
+    <bridge-name>%s</bridge-name>
+    <vpn-name>%s</vpn-name>
+    <primary/>
+    <max-ttl>
+      <ttl-value>1</ttl-value>
+    </max-ttl>
+  </bridge>
+</rpc>

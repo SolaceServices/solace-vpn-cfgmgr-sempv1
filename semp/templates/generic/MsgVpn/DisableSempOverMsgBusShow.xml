@@ -1,0 +1,10 @@
+<rpc semp-version="soltr/%s">
+  <message-vpn>
+    <vpn-name>%s</vpn-name>
+       <semp-over-msgbus>
+          <show-cmds>
+               <shutdown/>
+          </show-cmds>
+       </semp-over-msgbus>
+  </message-vpn>
+</rpc>

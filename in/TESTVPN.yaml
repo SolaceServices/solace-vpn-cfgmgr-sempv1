@@ -1,0 +1,90 @@
+---
+# SimpleVPN VPN config
+#
+
+#---------------------------------------------------------
+vpn:
+- name: TESTVPN
+  large-msg-threshold: 10240K
+  max-connections: '900'
+  max-egress-flows: '600'
+  max-endpoints: '600'
+  max-ingress-flows: '600'
+  max-subscriptions: '5000'
+  max-transacted-sessions: '600'
+  max-transactions: '5000'
+  semp-over-message-bus: 'yes'
+  spool-size: 10240M
+
+#---------------------------------------------------------
+client-profiles:
+- name: requester_profile
+  allow-bridge-connections: 'yes'
+  allow-guaranteed-endpoint-create: 'yes'
+  allow-guaranteed-message-receive: 'yes'
+  allow-guaranteed-message-send: 'yes'
+  allow-transacted-sessions: 'yes'
+  g1-queue-min-burst: '255'
+  max-connections: '900'
+  max-egress-flows: '600'
+  max-endpoints: '600'
+  max-ingress-flows: '600'
+  max-subscriptions: '5000'
+  max-transacted-sessions: '10'
+  max-transactions: '600'
+  tcp-win: 256K
+
+#---------------------------------------------------------
+client-users:
+- name: requester
+  acl-profile: default
+  client-profile: requester_profile
+  password: secretpassword
+  
+- name: testuser1
+  acl-profile: default
+  client-profile: requester_profile
+  password: secretpassword
+
+- name: testuser2
+  acl-profile: default
+  client-profile: requester_profile
+  password: xxx
+
+#---------------------------------------------------------
+queues:
+- name: '#DEAD_MSG_QUEUE'
+  access-type: exclusive
+  max-bind-count: '1'
+  max-msg-size: '100000'
+  max-redelivery: '0'
+  max-spool: 1G
+  max-unacked-msgs: '1000'
+  others-permission: no-access
+  owner: default
+  reject-msg-to-sender-on-discard: 'no'
+  respect-ttl: 'no'
+  topic-subscriptions: []
+
+- name: request
+  access-type: exclusive
+  max-bind-count: '10'
+  max-msg-size: '100000'
+  max-redelivery: '10'
+  max-spool: 500M
+  max-unacked-msgs: '1000'
+  others-permission: consume
+  owner: requester
+  reject-msg-to-sender-on-discard: 'yes'
+  respect-ttl: 'yes'
+  topic-subscriptions:
+  - request/baseline
+
+acl-profiles: []
+
+bridges: []
+
+jndi: []
+
+rest-delivery-points: []
+

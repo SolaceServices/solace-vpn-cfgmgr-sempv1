@@ -1,0 +1,7 @@
+<rpc semp-version="soltr/%s">
+    <show>
+        <message-spool>
+            <stats></stats>
+        </message-spool>
+    </show>
+</rpc>

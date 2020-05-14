@@ -1,0 +1,16 @@
+<rpc semp-version="soltr/%s">
+  <message-spool>
+    <vpn-name>%s</vpn-name>
+    <queue>
+      <name>%s</name>
+      <event>
+        <reject-low-priority-msg-limit>
+          <thresholds>
+            <set-percentage>%s</set-percentage>
+            <clear-percentage>%s</clear-percentage>
+          </thresholds>
+        </reject-low-priority-msg-limit>
+      </event>
+    </queue>
+  </message-spool>
+</rpc>

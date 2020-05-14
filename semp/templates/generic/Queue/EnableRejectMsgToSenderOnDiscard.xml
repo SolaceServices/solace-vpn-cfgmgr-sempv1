@@ -1,0 +1,9 @@
+<rpc semp-version="soltr/%s">
+  <message-spool>
+    <vpn-name>%s</vpn-name>
+    <queue>
+      <name>%s</name>
+      <reject-msg-to-sender-on-discard/>
+    </queue>
+  </message-spool>
+</rpc>

@@ -1,0 +1,11 @@
+<rpc semp-version="soltr/%s">
+    <show>
+        <jndi>
+            <connection-factory>
+                <name>*</name>
+                <vpn-name>%s</vpn-name>
+                <detail></detail>
+            </connection-factory>
+        </jndi>
+    </show>
+</rpc>

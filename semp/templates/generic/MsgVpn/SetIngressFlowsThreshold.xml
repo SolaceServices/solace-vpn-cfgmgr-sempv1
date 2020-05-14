@@ -1,0 +1,13 @@
+<rpc semp-version="soltr/%s">
+    <message-spool>
+        <vpn-name>%s</vpn-name>
+        <event>
+            <ingress-flows>
+                <thresholds>
+                    <set-percentage>%s</set-percentage>
+                    <clear-percentage>%s</clear-percentage>
+                </thresholds>
+            </ingress-flows>
+        </event>
+    </message-spool>
+</rpc>

@@ -1,0 +1,9 @@
+<rpc semp-version="soltr/%s">
+  <create>
+    <bridge>
+      <bridge-name>%s</bridge-name>
+      <vpn-name>%s</vpn-name>
+      <primary/>
+    </bridge>
+  </create>
+</rpc>

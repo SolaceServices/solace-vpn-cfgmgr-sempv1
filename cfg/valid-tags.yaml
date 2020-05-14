@@ -1,0 +1,158 @@
+---
+# Valid tags for configfile
+# Root tags with 'required: True' set are required, others are optional
+# Ramesh Natarajan, Solace PSG
+
+# Router info
+router:
+    required: True
+    key: False
+    name: True 
+    #env: True 
+    semp-version: True
+    admin-ip: True
+    data-ip: True
+    semp-port: True
+
+# VPN
+vpn:
+   required: True
+   key: False
+   name: True
+   max-connections: True
+   spool-size: True
+   large-msg-threshold: True
+   max-transactions: True
+   max-transacted-sessions: True
+   max-endpoints: True
+   max-egress-flows: True
+   max-ingress-flows: True
+   semp-over-message-bus: True
+   max-subscriptions: True
+   event-thresholds:
+      spool-usage-set: True
+      spool-usage-clear: True
+      connection-set: True
+      connection-clear: True
+      endpoints-set: True
+      endpoints-clear: True
+      ingress-flows-set: True
+      ingress-flows-clear: True
+      egress-flows-set: True
+      egress-flows-clear: True
+
+# Client Profiles
+client-profiles:
+     required: True
+     key: False
+     name: True
+     tcp-win: True
+     g1-queue-min-burst: True
+     allow-bridge-connections: True
+     allow-guaranteed-endpoint-create: True
+     allow-guaranteed-message-send: True
+     allow-guaranteed-message-receive: True
+     allow-transacted-sessions: True
+     max-connections: False
+     max-endpoints: False
+     max-ingress-flows: False
+     max-egress-flows: False
+     max-transactions: False
+     max-transacted-sessions: False
+     max-subscriptions: False
+
+# ACL Profiles
+acl-profiles:
+     required: False
+     key: False
+     name: True
+     client-connect-default-action: True
+     publish-topic-default-action: True
+     subscribe-topic-default-action: True
+     client-connect-exceptions: True
+     publish-topic-exceptions: True
+     subscribe-topic-exceptions: True
+
+# Client usernames
+client-users:
+     required: True
+     key: False
+     name: True
+     client-profile: True
+     acl-profile: True
+     password: True
+
+# Queues
+queues:
+     required: True
+     key: False
+     name: True
+     max-msg-size: True
+     max-spool: True
+     max-bind-count: True
+     max-redelivery: True
+     access-type: True
+     owner: True
+     topic-subscriptions: False
+     respect-ttl: True
+     reject-msg-to-sender-on-discard: True
+     others-permission: True
+     max-unacked-msgs: True
+     event-thresholds:
+         spool-usage-set: True
+         spool-usage-clear: True
+         bind-count-set: True
+         bind-count-clear: True
+# Bridges
+bridges: 
+   required: False
+   key: False
+   name: True
+   trusted-common-name: True
+   max-ttl: True
+   remote-user:
+     username: True
+     password: True
+   remote-vpns:
+     vpnname: True
+     ip-port: True
+     queue-name: True
+     window-size: True
+     options: True
+     connect-order: True
+
+# REST Delivery Points (RDP)
+rest-delivery-points:
+    required: False
+    key: False
+    name: True
+    client-profile: True
+    consumers: 
+      name: True
+      remote-host: True
+      remote-port: True
+      enable-ssl: True
+    queue-bindings:
+      name: True
+      request-target: True
+
+# JMS & JNDI
+jndi:
+   required: False
+   key: False
+   name: True
+   # messaging
+   default-delivery-mode: True
+   default-dmq-eligible: True
+   # transport
+   connect-timeout: True
+   reconnect-retries: True
+   connect-retries: True
+   connect-retries-per-host: True
+   max-keepalive-count: True
+   dynamic-durables: True
+   #ad-window-size: True
+   #reconnect-interval: True
+   #direct-transport: True
+   #optimize-direct: True
+   #respect-ttl: True

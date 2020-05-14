@@ -1,0 +1,6 @@
+<rpc semp-version="soltr/%s">
+  <jndi>
+    <vpn-name>%s</vpn-name>
+      <shutdown/>
+  </jndi>
+</rpc>

@@ -1,0 +1,11 @@
+<rpc semp-version="soltr/%s">
+  <message-spool>
+    <vpn-name>%s</vpn-name>
+    <queue>
+      <name>%s</name>
+      <access-type>
+        <%s/>
+      </access-type>
+    </queue>
+  </message-spool>
+</rpc>

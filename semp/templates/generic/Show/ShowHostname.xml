@@ -1,0 +1,5 @@
+<rpc semp-version="soltr/%s">
+    <show>
+        <hostname></hostname>
+    </show>
+</rpc>

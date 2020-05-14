@@ -1,0 +1,15 @@
+<rpc semp-version="soltr/%s">
+  <message-vpn>
+    <vpn-name>%s</vpn-name>
+    <rest>
+      <rest-delivery-point>
+        <name>%s</name>
+        <create>
+          <rest-consumer>
+            <name>%s</name>
+          </rest-consumer>
+        </create>
+      </rest-delivery-point>
+    </rest>
+  </message-vpn>
+</rpc>

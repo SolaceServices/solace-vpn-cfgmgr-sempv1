@@ -1,0 +1,9 @@
+<rpc semp-version="soltr/%s">
+    <client-profile>
+        <name>%s</name>
+        <vpn-name>%s</vpn-name>
+        <max-connections-per-client-username>
+            <value>%s</value>
+        </max-connections-per-client-username>
+    </client-profile>
+</rpc>

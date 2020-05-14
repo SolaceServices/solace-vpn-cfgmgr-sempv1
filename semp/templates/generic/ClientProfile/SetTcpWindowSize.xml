@@ -1,0 +1,11 @@
+<rpc semp-version="soltr/%s">
+  <client-profile>
+    <name>%s</name>
+    <vpn-name>%s</vpn-name>
+    <tcp>
+      <max-wnd>
+        <num-kilo-bytes>%s</num-kilo-bytes>
+      </max-wnd>
+    </tcp>
+  </client-profile>
+</rpc>

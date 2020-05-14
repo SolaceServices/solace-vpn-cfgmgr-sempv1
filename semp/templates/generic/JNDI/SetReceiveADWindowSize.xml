@@ -1,0 +1,15 @@
+<rpc semp-version="soltr/%s">
+  <jndi>
+    <vpn-name>%s</vpn-name>
+    <connection-factory>
+      <name>%s</name>
+      <property-list>
+        <name>ad-properties</name>
+        <property>
+		  	<name>receive-ad-window-size</name>
+			<value>%s</value>
+        </property>
+      </property-list>
+    </connection-factory>
+  </jndi>
+</rpc>

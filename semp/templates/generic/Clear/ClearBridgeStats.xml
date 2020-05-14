@@ -1,0 +1,9 @@
+<rpc semp-version="soltr/%s">
+    <clear>
+        <bridge>
+            <bridge-name-pattern>*</bridge-name-pattern>
+            <vpn-name>%s</vpn-name>
+            <stats></stats>
+        </bridge>
+    </clear>
+</rpc>

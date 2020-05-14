@@ -1,0 +1,10 @@
+<rpc semp-version="soltr/%s">
+    <admin>
+        <message-spool>
+            <vpn-name>%s</vpn-name>
+            <delete-messages>
+                <queue-name>%s</queue-name>
+            </delete-messages>
+        </message-spool>
+    </admin>
+</rpc>

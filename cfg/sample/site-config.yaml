@@ -1,0 +1,39 @@
+---
+# Soalce parameters site site-defaults for Apple AOS
+# Ramesh Natarajan, Solace PSG (for Apple AOS)
+
+router:
+  - name: LAB
+    semp-port: 80
+    semp-version: '7_1_1'
+    admin-ip: 10.11.10.124
+    data-ip: 10.11.10.122
+
+vpn:
+   - key: site-default
+
+# Client Profiles
+client-profiles:
+   - key: site-default
+
+# ACL Profiles
+acl-profiles:
+   - key: site-default
+
+# Client usernames
+client-users:
+   - key: site-default
+
+# Queues
+queues:
+   - key: site-default
+     
+# Bridges
+bridges: 
+ - key: site-default
+   remote-vpns: 
+     options: ssl
+
+# JMS & JNDI
+jndi:
+  - name: jms/cf
